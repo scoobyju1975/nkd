@@ -1,0 +1,22 @@
+.mod-default
+{
+	&.padding {
+		padding-top: 25px;
+		padding-bottom: 45px;
+	}
+}
+
+.case {
+	border: 2px solid $white;
+}
+
+/* Reinstates the admin bar pushdown with the sticky navigation. */
+.logged-in .masthead {
+	margin-top: 46px;;
+}
+
+@media screen and (min-width: 783px) {
+	.logged-in .masthead {
+		margin-top: 32px;
+	}
+}

@@ -1,0 +1,85 @@
+// ==================================================
+
+// 2 SLIDESHOW
+
+// ==================================================
+
+// --------------------------------------------------
+// 1.2  Slider
+// --------------------------------------------------
+
+.swiper-container
+{
+    //display: inline-block;
+
+    .swiper-slide
+    {
+        width: 100%;
+    }
+}
+
+.js-slideshow-pips {
+    position: absolute;
+    left: 0;
+    text-align: center;
+
+    width: 100%;
+    z-index: 1002;
+    display: inline-block;
+
+    &.bottom {
+        bottom: -40px;
+    }
+
+    .swiper-pagination-switch {
+        @extend .icon;
+
+        cursor: pointer;
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        font-size: 8px;
+        margin-right: 20px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:before {
+            @extend .icon-circle:before;
+        }
+
+        &.swiper-active-switch:before {
+            color: $primary;
+        }
+    }
+}
+
+.arrow-left, .arrow-right {
+    @extend .icon;
+
+    position: absolute;
+    left: 26px;
+    top: 50%;
+    margin-top: -23px;
+    /*width: 47px;
+    height: 47px;*/
+    cursor: pointer;
+
+    z-index: 1020;
+    font-size: 4em;
+
+    &:before {
+        @extend .icon-angle-left:before;
+    }
+}
+
+.arrow-right {
+    left: auto;
+    right: 26px;
+    background-position: left bottom;
+
+    &:before {
+        @extend .icon-angle-right:before;
+    }
+}

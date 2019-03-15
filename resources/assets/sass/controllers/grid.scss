@@ -1,0 +1,121 @@
+//
+// Grid system
+// --------------------------------------------------
+
+.container {
+	@include container-fixed();
+
+	@media (min-width: $screen-sm-min) {
+		width: $container-sm;
+	}
+	@media (min-width: $screen-md-min) {
+		width: $container-md;
+	}
+	@media (min-width: $screen-lg-min) {
+		width: $container-lg;
+	}
+
+	&.is-fluid {
+		width: auto !important;
+	}
+}
+
+
+// Row
+//
+// Rows contain and clear the floats of your columns.
+
+.row {
+	@include make-row();
+}
+
+
+// Columns
+//
+// Common styles for small and large grid columns
+
+@include make-grid-columns();
+
+
+// Extra small grid
+//
+// Columns, offsets, pushes, and pulls for extra small devices like
+// smartphones.
+
+@include make-grid(xs);
+
+
+// Small grid
+//
+// Columns, offsets, pushes, and pulls for the small device range, from phones
+// to tablets.
+
+@media (min-width: $screen-sm-min) {
+	@include make-grid(sm);
+}
+
+
+// Medium grid
+//
+// Columns, offsets, pushes, and pulls for the desktop device range.
+
+@media (min-width: $screen-md-min) {
+	@include make-grid(md);
+}
+
+
+// Large grid
+//
+// Columns, offsets, pushes, and pulls for the large desktop device range.
+
+@media (min-width: $screen-lg-min) {
+	@include make-grid(lg);
+}
+
+// ==================================================
+
+// 1  5 GRID COLUMNS
+
+// ==================================================
+
+
+// --------------------------------------------------
+// 1.1  Setup
+// --------------------------------------------------
+
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+	position: relative;
+	min-height: 1px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+// --------------------------------------------------
+// 1.1  Responsive
+// --------------------------------------------------
+
+.col-xs-15 {
+	width: 20%;
+	float: left;
+}
+@media (min-width: $screen-sm) {
+	.col-sm-15 {
+		width: 20%;
+		float: left;
+	}
+}
+@media (min-width: $screen-md) {
+	.col-md-15 {
+		width: 20%;
+		float: left;
+	}
+}
+@media (min-width: $screen-lg) {
+	.col-lg-15 {
+		width: 20%;
+		float: left;
+	}
+}

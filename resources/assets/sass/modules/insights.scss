@@ -1,0 +1,85 @@
+$blog-header-height: 46px;
+
+.blog-header {
+	ul {
+		margin-bottom: 0;
+	}
+	.col {
+		padding: 0;
+	}
+
+	li {
+		display: inline-block;
+		padding: 0 12px;
+		a:hover {
+			text-decoration: underline;
+		}
+
+		.caret{
+			border-left: 10px solid $primary-blue;
+		    border-top: 6px solid transparent;
+		    border-bottom: 6px solid transparent;
+		    width: 0;
+		    display: inline-block;
+		    height: 0;
+		    margin-bottom: 2px;
+		    margin-left: 10px;
+		}
+		h3 {
+			height: $blog-header-height;
+			line-height: $blog-header-height;
+			margin-bottom: 0;
+		}
+
+}
+
+	.search-tag {
+		height: $blog-header-height;
+		padding: 6px 0;
+		input {
+			display: inline-block;
+			text-align: center;
+			border: 1px solid $primary-blue;
+			outline: none;
+			border-radius: 15px;
+			width: 70%;
+			height: 100%;
+		}
+
+		button {
+			border-radius: 15px;
+		    padding: 3px 10px;
+		}
+	}
+
+	margin-top: 24px;
+}
+
+hr {
+	border: none;
+	border-top: 1px solid #D8D8D8;
+}
+			
+.tag-label {
+	background-color: #E5E6E7;
+	border-radius: 20px;
+	display: inline-block;
+	margin: 4px 2px;
+	padding: 3px 18px;
+}
+
+
+.share-this {
+    text-align: right;
+    margin-bottom: 30px;
+    
+    a {
+	    margin: 0 0 0 4px;
+    }
+}
+
+
+.blog-grid {
+	margin-top: 24px;
+	margin-bottom: 48px;
+}

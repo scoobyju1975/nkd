@@ -1,0 +1,234 @@
+// ==================================================
+// VARIABLES
+// ==================================================
+// file:     core-variables.less
+// version:  1.0
+// date:     13th Jan 2014
+// --------------------------------------------------
+
+// ==================================================
+
+// 1  MAIN
+
+// ==================================================
+.main {
+	position: relative;
+}
+
+// ==================================================
+
+// 1  SECTIONS
+
+// ==================================================
+
+// --------------------------------------------------
+// 1.2  Base
+// --------------------------------------------------
+section, .section
+{
+	overflow: hidden;
+	position: relative;
+
+	&.bordered {
+		.module {
+			border-bottom: 2px solid $white;
+		}
+
+	}
+
+	.module {
+		//min-height: 144px;
+		position: relative;
+		overflow: visible;
+
+		.inner {
+			position: relative;
+		}
+
+		&.active {
+			outline: 1px dashed #777777;
+		}
+
+		&.arrow {
+			&:after {
+				top: 0;
+				left: 50%;
+				border: solid transparent;
+				content: " ";
+				height: 0;
+				width: 0;
+				position: absolute;
+				pointer-events: none;
+				border-color: rgba(255, 255, 255, 0);
+				border-top-color: #ffffff;
+				border-width: 20px;
+				margin-left: -20px;
+				z-index: 20;
+			}
+
+			&.arrow-up {
+				&:after {
+					bottom: 0;
+					top: auto;
+				}
+			}
+		}
+
+	}
+
+	figure {
+		overflow: visible;
+		background-position: top center;
+		background-repeat: no-repeat;
+		background-size: auto; // default
+
+		position: absolute;
+		left: 50%;
+		width: $screen-max;
+		//height: 100%;
+		height: 9999px;
+		margin-left: -($screen-max / 2);
+
+		&.cover, &.stretch
+		{
+			background-position: center center;
+			background-size: cover;
+			left:0;
+			top:0;
+			margin: 0;
+
+			/* Set rules to fill background */
+			min-height: 100%;
+
+			/* Set up proportionate scaling */
+			width: 100%;
+			height: auto;
+		}
+
+		&.repeat {
+			width: 100%;
+			margin: 0;
+			background-repeat: repeat-x;
+			top: 0;
+			left: 0;
+		}
+
+		&.fixed {
+			position: fixed;
+			height: 100%;
+			top: 0;
+			left: 0;
+		}
+
+		&.custom {
+			height: 100%;
+		}
+
+		&.ui-draggable {
+			cursor: move;
+		}
+	}
+
+	.js-video-container
+	{
+		.vimeo {
+			position: absolute;
+			width: 100%;
+			z-index: 1000;
+
+			iframe {
+				opacity: 0;
+				margin: 0 auto;
+				display: block;
+
+				// XS
+				@media (max-width: $screen-sm-min)
+				{
+					width: 100%;
+				}
+			}
+		}
+
+		video {
+			background-position: top center;
+			background-repeat: no-repeat;
+			background-size: auto; // default
+
+			position: absolute;
+			left: 50%;
+			width: $screen-max;
+			min-height: 100%;
+			margin-left: -($screen-max / 2);
+
+			&.cover, &.stretch
+			{
+				background-position: center center;
+				background-size: cover;
+				left:0;
+				margin: 0;
+
+				/* Set rules to fill background */
+				min-height: 100%;
+				//min-width: 1024px;
+
+				/* Set up proportionate scaling */
+				width: 100%;
+				height: auto;
+			}
+
+			&.width1440 {
+				width: 1440px;
+				margin-left: -(1440px / 2);
+			}
+
+			&.width1280 {
+				width: 1280px;
+				margin-left: -(1280px / 2);
+			}
+
+			// XS
+			@media (max-width: $screen-sm-min)
+			{
+				@include opacity(0);
+			}
+		}
+
+		.overlay {
+			z-index: 1;
+			background-color: $transparency-blue-darker;
+
+			position: absolute;
+			top: 0;
+			left: 0;
+
+			width: 100%;
+			height: 100%;
+
+			// XS
+			@media (max-width: $screen-sm-min)
+			{
+				@include opacity(0);
+			}
+		}
+	}
+}
+
+
+// ==================================================
+
+// 1  SITE
+
+// ==================================================
+
+
+.top-hero {
+    position: absolute;
+    left: 50%;
+    width: 1620px;
+    margin-left: -810px;
+}
+
+.home-insights {
+	padding-top: 10px;
+	padding-bottom: 50px;
+}

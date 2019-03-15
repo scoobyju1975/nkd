@@ -1,0 +1,277 @@
+.mod
+{
+	.cases-hero
+	{
+		.heading {
+			margin-bottom: 23px;
+			font-size: 60px;
+
+			em {
+				color: #122c38;
+				font-family: $font-family-plantin;
+				font-size: 69px;
+				font-style: default;
+			}
+
+			span {
+				color: #122c38;
+				font-family: $font-family-corzinair;
+			}
+
+			i {
+				padding-left: 23px;
+				padding-right: 23px;
+				font-size: 40px;
+			}
+		}
+
+		.join {
+			margin-top: 137px;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+	}
+
+	&.case-content {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+
+	.cases-lead
+	{
+		min-height: 300px;
+
+		padding-top: 115px;
+		padding-bottom: 105px;
+
+		.heading {
+			font-size: 30px;
+		}
+	}
+
+	.case-christies,
+	.case-dhl-global,
+	.case-dhl-express,
+	.case-dhl-express-2,
+	.case-british-airways
+	{
+		/*min-height: 392px;
+
+		padding-top: 127px;
+		padding-bottom: 105px;*/
+
+		.heading {
+			margin: 0;
+		}
+
+		.btn {
+			margin-top: 33px;
+		}
+	}
+
+	.dgf-hero
+	{
+		/*min-height: 392px;
+
+		padding-top: 237px;
+		padding-bottom: 105px;*/
+
+		.heading {
+			font-size: 45px;
+		}
+
+		.btn {
+			margin-top: 73px;
+		}
+	}
+
+	.dgf-stats {
+		//padding-top: 27px;
+		//padding-bottom: 60px;
+
+		h2 {
+			font-size: 40px;
+		}
+	}
+
+	.dgf-challenge {
+		//padding-top: 52px;
+		//padding-bottom: 60px;
+
+		.heading {
+			margin-bottom: 30px;
+		}
+
+		.compass {
+			margin-top: 185px;
+		}
+	}
+
+	.dgf-solution {
+		//padding-top: 55px;
+		//padding-bottom: 105px;
+
+		.heading {
+			margin-bottom: 30px;
+		}
+
+		.ipad {
+			margin-top: 97px;
+		}
+	}
+
+	.dgf-journey {
+		//padding-top: 37px;
+		//padding-bottom: 105px;
+
+		.heading {
+			margin-bottom: 30px;
+		}
+
+		.leaflet {
+			margin-top: 167px;
+		}
+
+		.custservice {
+			margin-top: 128px;
+		}
+	}
+
+	.dgf-lead {
+		//padding-top: 252px;
+		//padding-bottom: 146px;
+
+		.meta {
+			margin-top: 40px;
+		}
+	}
+
+	.cim-hero {
+		.btn {
+			margin-top: 100px;
+		}
+	}
+
+	.cim-stats {
+		padding-top: 27px;
+		padding-bottom: 60px;
+
+		h2 {
+			font-size: 40px;
+		}
+	}
+
+	.cim-challenge {
+
+		.challenge-content {
+			background-color: #202020;
+			margin-top: 60px;
+			padding-bottom: 43px;
+		}
+
+	}
+
+}
+
+.case-dgf {
+	//min-height: 4388px; // temp
+}
+
+.cases-nav {
+	padding-left: 30px;
+	padding-right: 30px;
+	a {
+		display: block;
+	}
+	p { margin-bottom: 0 }
+	.nav-left > div, .nav-right > div {
+		padding: 20px 0;
+	}
+	.nav-left {
+		border-right: 1px solid #c8c8c8;
+		.positioner {
+			float: left;
+		}
+	}
+	.nav-right {
+		.positioner {
+			float: right;
+		}
+	}
+	.nav-arrow-left {
+		display: inline-block;
+		width: 0;
+		height: 0;
+		border-right: 15px solid #e7392e;
+		border-top: 15px solid transparent;
+		border-bottom:15px solid transparent;
+		margin-top: 40px;
+	}
+	.nav-arrow-right {
+		display: inline-block;
+		width: 0;
+		height: 0;
+		border-left: 15px solid #e7392e;
+		border-top: 15px solid transparent;
+		border-bottom: 15px solid transparent;
+		margin-top: 40px;
+	}
+	.nav-arrow {
+		line-height: 106px;
+		padding: 0;
+	}
+	.text-container .inner {
+		margin: auto;
+		text-align: center;
+		max-width: 300px;
+	}
+	.placeholder {
+		display: none;
+	}
+	.title {
+		font-weight: 300;
+	    font-family: $font-family-headings;
+	    line-height: 1.1;
+	    margin-top: 0;
+	    margin-bottom: 22px;
+	    font-size: 27.38201px;
+	}
+
+	@media (max-width: 768px) {
+		.inner {
+			display: table;
+			height: 90px;
+		}
+		.title {
+			margin-bottom: 0;
+			display: table-cell;
+			vertical-align: middle;
+		}
+		.placeholder {
+			display: block;
+		}
+		p { 
+			display: none;
+		}
+		.nav-left {
+			.positioner {
+				float: right;
+			}
+			border-bottom: 1px solid #c8c8c8;
+			border-right: none;
+		}
+		.nav-arrow-left, .nav-arrow-right {
+			margin-top: 30px;
+		}
+
+		.nav-arrow {
+			line-height: 70px;
+			padding: 0;
+		}
+		.nav-right {
+			.positioner {
+				float: left;
+			}
+		}
+	}
+}

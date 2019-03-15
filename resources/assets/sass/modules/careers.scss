@@ -1,0 +1,46 @@
+.mod {
+	&.careers-hero {
+		min-height: 599px;
+
+		padding-top: 246px;
+		padding-bottom: 261px;
+	}
+
+	&.careers-like {
+		min-height: 405px;
+
+		padding-top: 91px;
+		padding-bottom: 20px;
+
+		.heading {
+			margin-bottom: 37px;
+			font-size: 25px;
+		}
+
+		p {
+			margin-bottom: 7px;
+		}
+	}
+
+	&.careers-offer {
+		min-height: 300px;
+
+		padding-top: 105px;
+		padding-bottom: 103px;
+	}
+
+	&.careers-offers {
+		min-height: 998px;
+
+		padding-top: 20px;
+		padding-bottom: 20px;
+
+		.heading {
+			font-size: 30px;
+			color: $primary;
+			margin-top: 165px;
+		}
+	}
+
+
+}

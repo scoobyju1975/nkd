@@ -1,0 +1,37 @@
+.commander
+{
+	z-index: $zindex-commander;
+
+	position: absolute;
+	left: 0;
+	top: 0;
+
+	display: none; // js
+
+	&.right {
+		right: 0;
+		left: auto; // undo default
+	}
+}
+
+.edit-module,
+.edit-section
+{
+	z-index: $zindex-commander;
+
+	display: none;
+	overflow: hidden;
+
+	position: relative;
+	width: 100%;
+
+	//box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1);
+}
+
+.edit-module {
+	background-color: $commander-module-edit-bg;
+}
+
+.edit-section {
+	background-color: $commander-section-edit-bg;
+}

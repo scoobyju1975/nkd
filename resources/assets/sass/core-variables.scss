@@ -1,0 +1,292 @@
+// ==================================================
+// VARIABLES
+// ==================================================
+// file:     core-variables.scss
+// version:  1.0
+// date:     9th July 2014
+// --------------------------------------------------
+
+
+
+// ==================================================
+
+// 1  GLOBAL
+
+// ==================================================
+
+
+// --------------------------------------------------
+// 1.2  Base
+// --------------------------------------------------
+
+//  2.1.4  Text
+// --------------------------------------------------
+$body-bg: $white;
+$text-color: $gray-light;
+
+//  2.1.4  Links
+// --------------------------------------------------
+$link-color: $primary-blue;
+$link-hover-color: $gray-light;
+
+
+// --------------------------------------------------
+// 1.2  Typography
+// -------------------------------------------------- 
+
+//  2.1.4  Font Family
+// --------------------------------------------------
+$font-family-text: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
+$font-family-headings: 'Lato', 'Helvetica Neue', Helvetica, sans-serif !default;
+$font-family: $font-family-text !default;
+$font-family-corzinair: 'CorzinairRegular', 'Times New Roman', Times, serif;
+$font-family-plantin: 'PlantinMTProItalic', Georgia, 'Times New Roman', Times, serif;
+
+// LATO
+// 45pt headlines
+// 30pt other headlines.
+
+// OPEN SANS
+// 14pt text
+// 20 line height
+
+$font-size: 14px;
+$font-size-base: $font-size; // alias
+$font-ratio: 1.125; // minor third
+
+$font-size-xs: scale(-1);
+$font-size-sm: scale(0);
+$font-size-small: $font-size-sm;
+$font-size-md: scale(1);
+$font-size-lg: scale(2);
+$font-size-large: $font-size-lg;
+
+//  2.1.4  Font Scaling
+// --------------------------------------------------
+$line-height: 1.618034; // golden ratio
+$line-height-base: $line-height; // alias of above
+$line-height-computed: floor($font-size * $line-height); // px > em
+
+// --------------------------------------------------
+// 1.2  Headings
+// --------------------------------------------------
+$headings-line-height: 1.1;
+
+
+// --------------------------------------------------
+// 1.2  Tables
+// --------------------------------------------------
+
+// Table backgrounds
+// -------------------------
+$table-bg: transparent;
+$table-bg-accent: lighten($gray-lighter, 5%);
+$table-bg-header: darken($gray-lighter, 5%);
+$table-bg-hover: lighten($gray-lighter, 7%);
+$table-bg-active: $table-bg-hover;
+
+// Table borders
+// -------------------------
+$table-border-color: darken($gray-lighter, 15%);
+
+// Table padding
+// -------------------------
+$table-cell-padding:            8px;
+$table-condensed-cell-padding:  5px !default;
+
+
+// --------------------------------------------------
+// 1.2  Iconography
+// --------------------------------------------------
+
+//  2.1.4  Setup
+// --------------------------------------------------
+$font-path:  "../fonts";
+$font-version: "4.1.0";
+
+// --------------------------------------------------
+// 1.2  Padding & Spacers
+// -------------------------------------------------- 
+
+//  2.1.4  Padding
+// --------------------------------------------------
+$padding-lg: 80px 60px;
+$padding-md: 60px 40px;
+$padding-sm: 40px 20px;
+$padding-xs: 20px 16px;
+
+$padding-base-vertical:     6px !default;
+$padding-base-horizontal:   12px !default;
+
+$padding-large-vertical:    10px !default;
+$padding-large-horizontal:  16px !default;
+
+$padding-small-vertical:    5px !default;
+$padding-small-horizontal:  10px !default;
+
+$padding-xs-vertical:       1px !default;
+$padding-xs-horizontal:     5px !default;
+
+//  2.1.4  Line height
+// --------------------------------------------------
+$line-height-large:         1.33 !default;
+$line-height-small:         1.5 !default;
+
+//  2.1.4  Borders
+// --------------------------------------------------
+$border-radius: 5px;
+$border-radius-base: $border-radius; // alias
+$border-radius-large:       6px !default;
+$border-radius-small:       3px !default;
+
+//  2.1.4  Component colors
+// --------------------------------------------------
+$component-active-color:    #fff !default;
+$component-active-bg:       $primary !default;
+
+//  2.1.4  Carets
+// --------------------------------------------------
+$caret-width-base:          4px !default;
+$caret-width-large:         5px !default;
+
+//  2.1.4  Dividers
+// --------------------------------------------------
+
+// --------------------------------------------------
+// 1.2  Z-index
+// --------------------------------------------------
+$zindex-title:             1000;
+$zindex-navbar:            1000 !default;
+$zindex-dropdown:          1000 !default;
+$zindex-popover:           1060 !default;
+$zindex-tooltip:           9070 !default;
+$zindex-navbar-fixed:      1030 !default;
+$zindex-modal-background:  1040 !default;
+$zindex-modal:             1050 !default;
+$zindex-commander:         1080;
+$zindex-overlay:           1090;
+$zindex-navigation:        1000;
+
+// --------------------------------------------------
+// 1.2  Form States
+// --------------------------------------------------
+$state-success-text:             #3c763d !default;
+$state-success-bg:               #dff0d8 !default;
+$state-success-border:           darken(adjust-hue($state-success-bg, -10), 5%) !default;
+
+$state-info-text:                #31708f !default;
+$state-info-bg:                  #d9edf7 !default;
+$state-info-border:              darken(adjust-hue($state-info-bg, -10), 7%) !default;
+
+$state-warning-text:             #8a6d3b !default;
+$state-warning-bg:               #fcf8e3 !default;
+$state-warning-border:           darken(adjust-hue($state-warning-bg, -10), 5%) !default;
+
+$state-danger-text:              #a94442 !default;
+$state-danger-bg:                #f2dede !default;
+$state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%) !default;
+
+
+// ==================================================
+
+// 1  ELEMENTS
+
+// ==================================================
+
+
+// --------------------------------------------------
+// 1.2  Horizontal divider (Hr)
+// --------------------------------------------------
+
+
+// --------------------------------------------------
+// 1.2  Lists
+// --------------------------------------------------
+
+
+// ==================================================
+
+// 1  COMPONENTS
+
+// ==================================================
+
+// --------------------------------------------------
+// Tooltips
+// --------------------------------------------------
+
+$tooltip-max-width:           200px !default;
+$tooltip-color:               #fff !default;
+$tooltip-bg:                  #000 !default;
+$tooltip-opacity:             .9 !default;
+
+$tooltip-arrow-width:         5px !default;
+$tooltip-arrow-color:         $tooltip-bg !default;
+
+// --------------------------------------------------
+// Commander
+// --------------------------------------------------
+
+$commander-module-edit-bg: darken($primary-green, 30%);
+$commander-section-edit-bg: darken($primary-purple, 30%);
+
+
+// ==================================================
+
+// 1  MEDIA QUERIES & SCREEN
+
+// ==================================================
+
+// --------------------------------------------------
+// 1.2  Site maximum width
+// --------------------------------------------------
+
+$screen-max: 1920px;
+
+
+// --------------------------------------------------
+// 1.2  Responsive widths
+// --------------------------------------------------
+
+$screen-xs: 480px !default;
+$screen-xs-min: $screen-xs !default;
+$screen-phone: $screen-xs-min !default;
+
+$screen-sm: 768px !default;
+$screen-sm-min: $screen-sm !default;
+$screen-tablet: $screen-sm-min !default;
+
+$screen-md: 992px !default;
+$screen-md-min: $screen-md !default;
+$screen-desktop: $screen-md-min !default;
+
+$screen-lg: 1200px !default;
+$screen-lg-min: $screen-lg !default;
+$screen-lg-desktop: $screen-lg-min !default;
+
+$screen-xs-max: ($screen-sm-min - 1) !default;
+$screen-sm-max: ($screen-md-min - 1) !default;
+$screen-md-max: ($screen-lg-min - 1) !default;
+
+
+// --------------------------------------------------
+// 1.2  Grid Setup
+// --------------------------------------------------
+
+$grid-columns: 12 !default;
+$grid-gutter-width: 30px !default;
+$grid-float-breakpoint: $screen-sm-min !default;
+$grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default;
+
+
+// --------------------------------------------------
+// 1.2  Container widths
+// --------------------------------------------------
+
+$container-tablet: ((720px + $grid-gutter-width)) !default;
+$container-sm: $container-tablet !default;
+
+$container-desktop: ((940px + $grid-gutter-width)) !default;
+$container-md: $container-desktop !default;
+
+$container-large-desktop: ((1140px + $grid-gutter-width)) !default;
+$container-lg: $container-large-desktop !default;

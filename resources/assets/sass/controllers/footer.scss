@@ -1,0 +1,130 @@
+// --------------------------------------------------
+// 1.2  Footer
+// --------------------------------------------------
+footer {
+    .contact-address {
+        .content {
+            @extend .pull-center;
+            padding: 30px 0;
+        }
+    }
+
+    .footer-logo {
+        padding-top: 60px;
+        padding-bottom: 47px;
+
+        .heading {
+            font-size: 31px;
+        }
+    }
+
+    .footer-sitemap {
+        min-height: 350px;
+        padding: 30px 0;
+
+        nav.sitemap-menu
+        {
+            padding-bottom: 30px;
+
+            ul {
+                @extend .pull-center;
+
+                > li {
+                    a {
+                        padding: 0 10px;
+                        margin: 5px 0;
+                        &.active,
+                        &:hover,
+                        &:focus {
+                            text-decoration: none;
+                            background: none;
+                        }
+                    }
+
+                    .btn-cta {
+                        margin: 0 25px;
+                    }
+
+                    // XS
+                    @media (max-width: $screen-sm-min)
+                    {
+                        border-left: none;
+                        padding-bottom: 14px;
+                    }
+                }
+            }
+        }
+
+        .sitemap-social
+        {
+            ul {
+                @extend .list-inline;
+                @extend .pull-center;
+                margin-bottom: 50px;
+
+                a {
+                    text-decoration: none;
+                    padding: 0 20px;
+                }
+
+                i {
+                    position: relative;
+                    font-size: 35px;
+                    color: $white;
+                }
+            }
+        }
+
+        .conditions {
+            .divider {
+                margin: 0 3px;
+            }
+            a {
+                &:hover, &:focus {
+                    text-decoration: underline;
+                }
+            }
+
+            @media (max-width: $screen-sm-min)
+            {
+                .divider {
+                    display: none;
+                }
+                .terms {
+                    display: block;
+                }
+            }
+
+        }
+
+        // SM and down
+        @media (max-width: $screen-md-min)
+        {
+            nav.sitemap-menu {
+                ul {
+                    > li {
+                        border-left: none;
+                        padding-bottom: 14px;
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .sitemap-social {
+                li {
+                    width: 50px;
+                    padding-bottom: 14px;
+
+                    a {
+                        padding: 0;
+                    }
+                    i {
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+
+    }
+
+}

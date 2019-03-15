@@ -1,0 +1,722 @@
+// ==================================================
+// COLOURS
+// ==================================================
+// file:     core-colours.less
+// version:  1.0
+// date:     9th July 2014
+// --------------------------------------------------
+
+
+
+// ==================================================
+
+// 1  THEME
+
+// ==================================================
+
+
+// --------------------------------------------------
+// 1.2  Shades
+// -------------------------------------------------- 
+
+//  2.1.4  Grays
+// -------------------------------------------------- 
+$gray-darker: #222;
+$gray-dark: #333;
+$gray: #555;
+$gray-light: #777;
+$gray-lighter: #eee;
+
+//  2.1.4  Black / White
+// -------------------------------------------------- 
+$black: #010101;
+$white: #fefefe;
+
+// --------------------------------------------------
+// 1.2  Colours (Primary)
+// -------------------------------------------------- 
+$primary: #e7392e;
+$primary-green: #53bbb1;
+$primary-yellow: #f4df51;
+
+$primary-blue-lightest: #97A6AE;
+$primary-blue-lighter: #70818A;
+$primary-blue-light: #465860;
+$primary-blue: #1E2D33;
+$primary-blue-dark: #172226;
+$primary-blue-darker: #0F181C;
+$primary-blue-darkest: #090F12;
+
+$primary-purple: $primary; // deprecated
+
+// --------------------------------------------------
+// 1.2  Colours (Secondary)
+// -------------------------------------------------- 
+$secondary-muted: #e3d9cb;
+$secondary-info: #83e5fe;
+$secondary-info-bg: #22a0de;
+$secondary-success: #2e431a;
+$secondary-success-bg: #a5c16e;
+$secondary-warning: #fe6301;
+$secondary-warning-bg: #fcbd18;
+$secondary-danger: #91070f;
+$secondary-danger-bg: #f81049;
+
+$brand-primary:         #428bca !default;
+$brand-success:         #5cb85c !default;
+$brand-info:            #5bc0de !default;
+$brand-warning:         #f0ad4e !default;
+$brand-danger:          #d9534f !default;
+
+// --------------------------------------------------
+// 1.2  Transparent Overlays
+// --------------------------------------------------
+$transparency-black: rgba(0,0,0,0.6);
+$transparency-white: rgba(100,100,100,0.6);
+$transparency-pink: rgba(231, 57, 46, 0.6);
+$transparency-blue: rgba(0,173,186,0.8);
+$transparency-blue-darker: rgba(57, 75, 89, 0.7);
+
+
+// ==================================================
+
+// 1  TEXT MUTATIONS
+
+// ==================================================
+
+// --------------------------------------------------
+// 1.2  Colours
+// --------------------------------------------------
+.text-pink {
+	color: $primary;
+}
+.text-green {
+	color: $primary-green;
+}
+.text-blue {
+	color: $primary-blue;
+}
+.text-purple {
+	color: $primary-purple; // deprecated
+}
+.text-yellow {
+	color: $primary-yellow;
+}
+
+// --------------------------------------------------
+// 1.2  Shades / Tints
+// --------------------------------------------------
+.text-darkest {
+	color: $black;
+}
+.text-darker {
+	color: $gray-darker;
+}
+.text-dark {
+	color: $gray-dark;
+}
+.text-mid {
+	color: $gray;
+}
+.text-light {
+	color: $gray-light;
+}
+.text-lighter {
+	color: $gray-lighter;
+}
+.text-lightest {
+	color: $white;
+}
+
+
+// ==================================================
+
+// 1  BACKGROUND MUTATIONS
+
+// ==================================================
+
+.bg-pink {
+	background-color: $primary;
+}
+.bg-green {
+	background-color: $primary-green;
+}
+.bg-blue {
+	background-color: $primary-blue;
+}
+.bg-blue-dark {
+	background-color: $primary-blue-dark;
+}
+.bg-blue-darker {
+	background-color: $primary-blue-darker;
+}
+.bg-blue-darkest {
+	background-color: $primary-blue-darkest;
+}
+
+.bg-purple {
+	background-color: $primary-purple; // deprecated
+}
+.bg-yellow {
+	background-color: $primary-yellow;
+}
+
+.bg-gray-dark {
+	background-color: $gray-darker;
+}
+.bg-gray-lighter {
+	background-color: $gray-lighter;
+}
+
+// ==================================================
+
+// MASTHEAD MUTATIONS
+
+// ==================================================
+
+$masthead-bg: #21333a;
+$masthead-bg-active: #2a4049;
+$masthead-color: $white;
+$masthead-color-active: $white;
+$masthead-divider-color: #38484e;
+
+// ==================================================
+
+// 1  LINK MUTATIONS
+
+// ==================================================
+
+.link-primary {
+
+	.heading {
+		color: $primary;
+	}
+
+	a {
+		color: $primary;
+		text-decoration: none;
+
+		&:hover,
+		&:focus {
+			color: $primary;
+			text-decoration: none;
+			cursor: pointer;
+		}
+	}
+
+	.btn-default {
+		@include button-variant($white, $primary, $primary);
+	}
+	.btn-outline {
+		@include button-variant($primary, transparent, $primary);
+
+		&:hover, &:focus, &:active, &.active,
+		.open > &.dropdown-toggle {
+			color: $white;
+			background-color: $primary;
+		}
+	}
+
+	.nav-pills {
+		@include pills-variant($white, $primary, $primary);
+	}
+	.nav-pills-outline {
+		@include pills-variant($primary, transparent, $primary);
+
+		> li {
+			> a {
+				&:hover,
+				&:focus {
+					color: $white;
+					background-color: $primary;
+				}
+			}
+
+			&.active > a {
+				&,
+				&:hover,
+				&:focus {
+					color: $white;
+					background-color: $primary;
+				}
+			}
+		}
+	}
+}
+
+.arrow-pink {
+	&:after {
+		border-color: rgba(167, 64, 155, 0);
+		border-top-color: $primary !important;
+	}
+}
+
+.link-green {
+
+	.heading {
+		color: $primary-green;
+	}
+
+	a {
+		color: $primary-green;
+		text-decoration: none;
+
+		&:hover,
+		&:focus {
+			color: $primary-green;
+			text-decoration: none;
+			cursor: pointer;
+		}
+	}
+
+	.btn-default {
+		@include button-variant($white, $primary-green, $primary-green);
+	}
+	.btn-outline {
+		@include button-variant($primary-green, transparent, $primary-green);
+
+		&:hover, &:focus, &:active, &.active,
+		.open > &.dropdown-toggle {
+			color: $white;
+			background-color: $primary-green;
+		}
+	}
+
+	.nav-pills {
+		@include pills-variant($white, $primary-green, $primary-green);
+	}
+	.nav-pills-outline {
+		@include pills-variant($primary-green, transparent, $primary-green);
+
+		> li {
+			> a {
+				&:hover,
+				&:focus {
+					color: $white;
+					background-color: $primary-green;
+				}
+			}
+
+			&.active > a {
+				&,
+				&:hover,
+				&:focus {
+					color: $white;
+					background-color: $primary-green;
+				}
+			}
+		}
+	}
+}
+
+.arrow-green {
+	&:after {
+		border-color: rgba(26, 183, 188, 0);
+		border-top-color: $primary-green !important;
+	}
+}
+
+.btn-cta {
+	&, &:visited, &:focus {
+		background: $primary !important;
+		color: $masthead-color !important;
+	}
+
+	&:active,
+	&:hover {
+		background: #C30E03 !important;
+		color: $masthead-color !important;
+	}
+}
+
+.link-blue {
+
+	.heading {
+		color: $primary-blue;
+	}
+
+	a {
+		color: $primary-blue;
+		text-decoration: none;
+
+		&:hover,
+		&:focus {
+			color: $primary-blue;
+			text-decoration: none;
+			cursor: pointer;
+		}
+	}
+
+	.btn-default {
+		@include button-variant($white, $primary-blue, $primary-blue);
+	}
+	.btn-outline {
+		@include button-variant($primary-blue, transparent, $primary-blue);
+
+		&:hover, &:focus, &:active, &.active,
+		.open > &.dropdown-toggle {
+			color: $white;
+			background-color: $primary-blue;
+		}
+	}
+
+	.nav-pills {
+		@include pills-variant($white, $primary-blue, $primary-blue);
+	}
+	.nav-pills-outline {
+		@include pills-variant($primary-blue, transparent, $primary-blue);
+
+		> li {
+			> a {
+				&:hover,
+				&:focus {
+					color: $white;
+					background-color: $primary-blue;
+				}
+			}
+
+			&.active > a {
+				&,
+				&:hover,
+				&:focus {
+					color: $white;
+					background-color: $primary-blue;
+				}
+			}
+		}
+	}
+}
+
+.arrow-blue {
+	&:after {
+		border-color: rgba(18, 44, 56, 0);
+		border-top-color: $primary-blue;
+	}
+}
+
+.link-purple {
+
+	.heading {
+		color: $primary-purple;
+	}
+
+	a {
+		color: $primary-purple;
+		text-decoration: none;
+
+		&:hover,
+		&:focus {
+			color: $primary-purple;
+			text-decoration: none;
+			cursor: pointer;
+		}
+	}
+
+	.btn-default {
+		@include button-variant($white, $primary-purple, $primary-purple);
+	}
+	.btn-outline {
+		@include button-variant($primary-purple, transparent, $primary-purple);
+
+		&:hover, &:focus, &:active, &.active,
+		.open > &.dropdown-toggle {
+			color: $white;
+			background-color: $primary-purple;
+		}
+	}
+
+	.nav-pills {
+		@include pills-variant($white, $primary-purple, $primary-purple);
+	}
+	.nav-pills-outline {
+		@include pills-variant($primary-purple, transparent, $primary-purple);
+
+		> li {
+			> a {
+				&:hover,
+				&:focus {
+					color: $white;
+					background-color: $primary-purple;
+				}
+			}
+
+			&.active > a {
+				&,
+				&:hover,
+				&:focus {
+					color: $white;
+					background-color: $primary-purple;
+				}
+			}
+		}
+	}
+}
+
+.arrow-purple {
+	&:after {
+		border-color: rgba(167, 64, 155, 0);
+		border-top-color: $primary-purple;
+	}
+}
+
+
+.link-yellow {
+
+	.heading {
+		color: $primary-yellow;
+	}
+
+	a {
+		color: $primary-yellow;
+		text-decoration: none;
+
+		&:hover,
+		&:focus {
+			color: $primary-yellow;
+			text-decoration: none;
+			cursor: pointer;
+		}
+	}
+
+	.btn-default {
+		@include button-variant($white, $primary-yellow, $primary-yellow);
+	}
+	.btn-outline {
+		@include button-variant($primary-yellow, transparent, $primary-yellow);
+
+		&:hover, &:focus, &:active, &.active,
+		.open > &.dropdown-toggle {
+			color: $white;
+			background-color: $primary-yellow;
+		}
+	}
+
+	.nav-pills {
+		@include pills-variant($white, $primary-yellow, $primary-yellow);
+	}
+	.nav-pills-outline {
+		@include pills-variant($primary-yellow, transparent, $primary-yellow);
+
+		> li {
+			> a {
+				&:hover,
+				&:focus {
+					color: $white;
+					background-color: $primary-yellow;
+				}
+			}
+
+			&.active > a {
+				&,
+				&:hover,
+				&:focus {
+					color: $white;
+					background-color: $primary-yellow;
+				}
+			}
+		}
+	}
+}
+
+.arrow-yellow {
+	&:after {
+		border-color: rgba(246, 187, 43, 0);
+		border-top-color: $primary-yellow;
+	}
+}
+
+.link-black {
+
+	.heading {
+		color: $black;
+	}
+
+	a {
+		color: $black;
+		text-decoration: none;
+
+		&:hover,
+		&:focus {
+			color: $black;
+			text-decoration: none;
+			cursor: pointer;
+		}
+	}
+
+	.btn-default {
+		@include button-variant($white, $black, $black);
+	}
+	.btn-outline {
+		@include button-variant($black, transparent, $black);
+
+		&:hover, &:focus, &:active, &.active,
+		.open > &.dropdown-toggle {
+			color: $white;
+			background-color: $black;
+		}
+	}
+
+	.nav-pills {
+		@include pills-variant($white, $black, $black);
+	}
+	.nav-pills-outline {
+		@include pills-variant($black, transparent, $black);
+
+		> li {
+			> a {
+				&:hover,
+				&:focus {
+					color: $white;
+					background-color: $black;
+				}
+			}
+
+			&.active > a {
+				&,
+				&:hover,
+				&:focus {
+					color: $white;
+					background-color: $black;
+				}
+			}
+		}
+	}
+}
+
+.arrow-black {
+	&:after {
+		border-color: rgba(1, 1, 1, 0);
+		border-top-color: $black;
+	}
+}
+
+
+.link-white {
+
+	.heading {
+		color: $white;
+	}
+
+	a {
+		color: $white;
+		text-decoration: none;
+
+		&:hover,
+		&:focus {
+			color: $white;
+			text-decoration: none;
+			cursor: pointer;
+		}
+	}
+
+	.btn-default {
+		@include button-variant($black, $white, $white);
+	}
+	.btn-outline {
+		@include button-variant($white, transparent, $white);
+
+		&:hover, &:focus, &:active, &.active,
+		.open > &.dropdown-toggle {
+			color: $black;
+			background-color: $white;
+		}
+	}
+
+	.nav-pills {
+		@include pills-variant($black, $white, $white);
+	}
+	.nav-pills-outline {
+		@include pills-variant($white, transparent, $white);
+
+		> li {
+			> a {
+				&:hover,
+				&:focus {
+					color: $black;
+					background-color: $white;
+				}
+			}
+
+			&.active > a {
+				&,
+				&:hover,
+				&:focus {
+					color: $black;
+					background-color: $white;
+				}
+			}
+		}
+	}
+}
+
+.arrow-white {
+	&:after {
+		border-color: rgba(254, 254, 254, 0);
+		border-top-color: $white;
+	}
+}
+
+.link-gray {
+
+	.heading {
+		color: $gray-light;
+	}
+
+	a {
+		color: $gray-light;
+		text-decoration: none;
+
+		&:hover,
+		&:focus {
+			color: $gray-light;
+			text-decoration: none;
+			cursor: pointer;
+		}
+	}
+
+	.btn-default {
+		@include button-variant($white, $gray-light, $gray-light);
+	}
+	.btn-outline {
+		@include button-variant($gray-light, transparent, $gray-light);
+
+		&:hover, &:focus, &:active, &.active,
+		.open > &.dropdown-toggle {
+			color: $white;
+			background-color: $gray-light;
+		}
+	}
+
+	.nav-pills {
+		@include pills-variant($white, $gray-light, $gray-light);
+	}
+	.nav-pills-outline {
+		@include pills-variant($gray-light, transparent, $gray-light);
+
+		> li {
+			> a {
+				&:hover,
+				&:focus {
+					color: $white;
+					background-color: $gray-light;
+				}
+			}
+
+			&.active > a {
+				&,
+				&:hover,
+				&:focus {
+					color: $white;
+					background-color: $gray-light;
+				}
+			}
+		}
+	}
+}
+
+.arrow-gray {
+	&:after {
+		border-color: rgba(119, 119, 119, 0);
+		border-top-color: $gray-light;
+	}
+}

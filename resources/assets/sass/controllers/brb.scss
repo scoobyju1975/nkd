@@ -1,0 +1,79 @@
+#brb {
+	.page {
+		height: 100%;
+		width: 100%;
+		min-height: 450px;
+		color: $white;
+		background-color: #21343B;
+	}
+
+	.container {
+		position: absolute;
+		transform-style: preserve-3d;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.logo {
+		font-size: 5em;
+		color: #e7392e;
+	}
+
+	a {
+		text-decoration: none;
+		color: #e7392e;
+
+		&:hover {
+			color: $white;
+		}
+	}
+
+	.lead {
+		margin-bottom: (15px * 4);
+	}
+
+	#address,
+	#contact {
+		padding-left: (15px * 2);
+		padding-right: (15px * 2);
+	}
+
+	#address {
+		text-align: right;
+	}
+	#contact {
+		text-align: left;
+	}
+
+	@media (max-width: $screen-xs-max)
+	{
+		.logo {
+			margin: 15px 0 0;
+			position: relative;
+			display: block;
+		}
+
+		.logo,
+		.lead {
+			display: block;
+			text-align: center;
+		}
+
+		.container {
+			min-width: 320px;
+
+			position: relative;
+			transform-style: flat;
+			transform: none;
+			top: auto;
+			left: auto;
+		}
+
+		#address,
+		#contact {
+			margin-bottom: (15px * 2);
+			text-align: center;
+		}
+	}
+}

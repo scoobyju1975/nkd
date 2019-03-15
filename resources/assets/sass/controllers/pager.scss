@@ -1,0 +1,89 @@
+//== Pager
+//
+//##
+
+$pager-bg:                             $pagination-bg !default;
+$pager-border:                         $pagination-border !default;
+$pager-border-radius:                  15px !default;
+
+$pager-hover-bg:                       $pagination-hover-bg !default;
+
+$pager-active-bg:                      $pagination-active-bg !default;
+$pager-active-color:                   $pagination-active-color !default;
+
+$pager-disabled-color:                 $pagination-disabled-color !default;
+
+//
+// Pager pagination
+// --------------------------------------------------
+
+
+.pager {
+	padding-left: 0;
+	margin: $line-height-computed 0;
+	list-style: none;
+	text-align: center;
+	@include clearfix();
+
+	&.no-outline {
+		li {
+			> a,
+			> span {
+				border: none;
+				border-radius: 0;
+			}
+		}
+	}
+
+	li {
+		display: inline;
+		> a,
+		> span {
+			display: inline-block;
+			padding: 5px 14px;
+			background-color: $pager-bg;
+			border: 1px solid $pager-border;
+			border-radius: $pager-border-radius;
+			font-weight: bold;
+			max-width: 50%;
+
+			span {
+				color: $gray-darker;
+			}
+		}
+
+		> a:hover,
+		> a:focus {
+			text-decoration: none;
+			background-color: $pager-hover-bg;
+		}
+	}
+
+	.next {
+		> a,
+		> span {
+			float: right;
+			text-align: right;
+		}
+	}
+
+	.previous {
+		> a,
+		> span {
+			float: left;
+			text-align: left;
+		}
+	}
+
+	.disabled {
+		> a,
+		> a:hover,
+		> a:focus,
+		> span {
+			color: $pager-disabled-color;
+			background-color: $pager-bg;
+			cursor: not-allowed;
+		}
+	}
+
+}

@@ -1,0 +1,111 @@
+.pagination a{color:#000}
+
+@media only screen and (max-width: 641px) {
+	.gform_wrapper li.field_sublabel_below div.ginput_complex {
+	    margin-top: 0 !important;
+	    }
+	.gfield_label {
+	    line-height: auto !important;
+		}
+	.gform_wrapper .ginput_complex.ginput_container_address .ginput_left {
+	    margin-left: 0 !important;
+	}
+}
+
+
+/* Discovery Process Bug */
+@media only screen and (max-width: 430px) {
+	.formula-horizontal .content {
+    	position: relative;
+		display: table;
+		margin: 0 auto;
+		width: 100%;
+	}
+	.mod .formula-horizontal .content .buttons {
+		display: inline;
+	}
+	.mod .formula-horizontal .content a.btn[href="#section-45"] {
+		-webkit-transform: scale(.75) translateX(-8.5%);
+		-ms-transform: scale(.75) translateX(-8.5%);
+		transform: scale(.75) translateX(-8.5%);
+		display: table-cell;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	.mod .formula-horizontal .content a.btn[href="#section-45"] {
+		-webkit-transform: scale(.65) translateX(-24.6%);
+		-ms-transform: scale(.65) translateX(-24.6%);
+		transform: scale(.65) translateX(-24.6%);
+	}
+}
+
+
+/* Case Studies Button Bug */
+@media only screen and (max-width: 430px) {
+	.mod .cases-latest-alt .image .pull-vertical {
+    	position: relative;
+		top: 50%;
+		-webkit-transform: scale(.9) translateY(-50%);
+		-ms-transform: scale(.9) translateY(-50%);
+		transform: scale(.9) translateY(-50%);
+	}
+	.mod .cases-latest-alt .image .overlay {
+		padding: 0;
+	}
+}
+
+@media only screen and (max-width: 441px) {
+	.mod .cases-latest-alt .image .pull-vertical {
+    	-webkit-transform: scale(.64) translateY(-75%);
+		-ms-transform: scale(.64) translateY(-75%);
+		transform: scale(.64) translateY(-75%);
+	}
+	.mod .cases-latest-alt .image .overlay {
+		padding: 0;
+		background-color: rgba(0,0,0,.2);
+	}
+	.mod .cases-latest-alt .image .overlay .heading {
+		line-height: 1em;
+	}
+}
+
+/* Bragging Rights Awards Bug */
+@media only screen and (max-width: 641px) {
+	.mod .awards .items .item {
+    	padding: 20px 0;
+	}
+	.mod .awards .items .item:nth-of-type(1n+3) {
+    	display: inline !important;
+	}
+}
+
+
+/* Row Spacing On Services Bug */
+@media only screen and (max-width: 641px) {
+	.mod .text-center-long-btn-alt .gridded .row:first-child {
+    	margin-bottom: 0;
+	}
+}
+
+
+/* Insights body image Bug */
+@media only screen and (max-width: 1200px) {
+	.content .aligncenter,
+	.content .aligncenter img {
+    	float: none;
+    	width: 100% !important;
+    	height: auto;
+	}
+}
+
+@media only screen and (max-width: 641px) {
+	.content .alignleft,
+	.content .alignleft img,
+	.content .alignright,
+	.content .alignright img {
+    	float: none;
+    	width: 100% !important;
+    	height: auto;
+	}
+}
